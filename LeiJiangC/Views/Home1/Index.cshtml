@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Home1";
+}
+<!-- 地图 -->
+<div id="map"> 
+        <div class="btn-group" id="ToolBar">
+            <button type="button" class="btn btn-primary" id="HeLiu">河流面积</button>
+            <button type="button" class="btn btn-primary" id="Hu">湖面积</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="Drop">路线规划</button>
+            <button type="button" class="btn btn-primary" id="Pic">行政区划图</button>
+            <button type="button" class="btn btn-primary" id="Clear">清除复原</button>
+        </div>
+</div>
+<!-- 鹰眼图 -->
+<div id="overview"></div>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">
+                    请选择出发酒店：
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                   x
+                </button>
+                
+            </div>
+            <div class="modal-body" id="HotelItem">
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                    关闭
+                </button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="Routing">
+                    开始寻路
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="hide" style="display:none" id="LeiJiang">
+    @*<img src="~/Content/picture/%e5%86%85%e6%b1%9f%e7%9f%a2%e9%87%8f%e5%9c%b0%e5%9b%be.jpg" />*@
+    <img src="~/Content/picture/44.png" />
+</div>
+
